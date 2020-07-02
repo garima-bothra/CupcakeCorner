@@ -14,6 +14,7 @@
 		86D6812024AD55E000426B2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86D6811F24AD55E000426B2C /* Preview Assets.xcassets */; };
 		86D6812324AD55E000426B2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D6812124AD55E000426B2C /* LaunchScreen.storyboard */; };
 		86D6812D24AD879500426B2C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D6812C24AD879500426B2C /* Order.swift */; };
+		86D6813124AD8A4800426B2C /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D6813024AD8A4800426B2C /* AddressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		86D6812224AD55E000426B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86D6812424AD55E000426B2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86D6812C24AD879500426B2C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		86D6813024AD8A4800426B2C /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				86D6812F24AD87ED00426B2C /* Helper */,
-				86D6811A24AD55DE00426B2C /* ContentView.swift */,
+				86D6813224AD8A5100426B2C /* View */,
 				86D6812E24AD87D700426B2C /* Model */,
 				86D6811C24AD55E000426B2C /* Assets.xcassets */,
 				86D6812124AD55E000426B2C /* LaunchScreen.storyboard */,
@@ -92,6 +94,15 @@
 				86D6811824AD55DE00426B2C /* SceneDelegate.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		86D6813224AD8A5100426B2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86D6811A24AD55DE00426B2C /* ContentView.swift */,
+				86D6813024AD8A4800426B2C /* AddressView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 				86D6811924AD55DE00426B2C /* SceneDelegate.swift in Sources */,
 				86D6812D24AD879500426B2C /* Order.swift in Sources */,
 				86D6811B24AD55DE00426B2C /* ContentView.swift in Sources */,
+				86D6813124AD8A4800426B2C /* AddressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
