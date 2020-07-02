@@ -9,6 +9,7 @@
 import Foundation
 
 class Order: ObservableObject, Codable {
+    // MARK: Product Details
     static let types = ["Vanilla", "Strawberry", "Chocolate", "Rainbow"]
     enum CodingKeys: CodingKey {
         case type, quantity, extraFrosting, addSprinkles, name, streetAddress, city, zip
@@ -47,13 +48,14 @@ class Order: ObservableObject, Codable {
         return cost
     }
 
+    // MARK: Address Details
     @Published var name = ""
     @Published var streetAddress = ""
     @Published var city = ""
     @Published var zip = ""
 
     var hasValidAddress: Bool {
-        if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
+        if name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || streetAddress.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || city.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || zip.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             return false
         }
 
